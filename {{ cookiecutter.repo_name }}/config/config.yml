@@ -1,0 +1,8 @@
+samples: config/samples.tsv
+units: config/units.tsv
+
+resources:
+  ref:
+    transcriptome: "resources/ref/Homo_sapiens.GRCh38.cdna.chr21.fa"
+    # species needs to be an identifier known to biomart, e.g. mmusculus, hsapiens
+    species: hsapiens
