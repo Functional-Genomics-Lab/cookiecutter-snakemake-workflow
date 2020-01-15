@@ -1,7 +1,7 @@
 {
-  "full_name": "Johannes Köster",
-  "email": "johannes.koester@protonmail.com",
-  "username": "johanneskoester",
+  "full_name": "Edmund Miller",
+  "email": "edmund.a.miller@protonmail.com",
+  "username": "emiller88",
   "project_name": "RNA-Seq",
   "repo_name": "rna-seq",
   "min_snakemake_version": "3.12.0"

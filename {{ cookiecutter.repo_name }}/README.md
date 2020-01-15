@@ -1,14 +1,14 @@
 # Snakemake workflow: {{cookiecutter.project_name}}
 
-[![Snakemake](https://img.shields.io/badge/snakemake-≥{{cookiecutter.min_snakemake_version}}-brightgreen.svg)](https://snakemake.bitbucket.io)
-[![Build Status](https://travis-ci.org/snakemake-workflows/{{cookiecutter.repo_name}}.svg?branch=master)](https://travis-ci.org/snakemake-workflows/{{cookiecutter.repo_name}})
+[![Snakemake](https://img.shields.io/badge/snakemake-≥{{cookiecutter.min_snakemake_version}}-brightgreen.svg)](https://snakemake.readthedocs.io/en/stable/)
+[![Build Status](https://gitlab.com/functional-genomics/analysis/{{cookiecutter.repo_name}}/badges/master/pipeline.svg)](https://gitlab.com/functional-genomics/analysis/{{cookiecutter.repo_name}}/commits/master)
 
 This is the template for a new Snakemake workflow. Replace this text with a comprehensive description covering the purpose and domain.
 Insert your code into the respective folders, i.e. `scripts`, `rules`, and `envs`. Define the entry point of the workflow in the `Snakefile` and the main configuration in the `config.yaml` file.
 
 ## Authors
 
-* {{cookiecutter.full_name}} (@{{cookiecutter.username}})
+-   {{cookiecutter.full_name}} (@{{cookiecutter.username}})
 
 ## Usage
 
@@ -72,7 +72,6 @@ The following recipe provides established best practices for running and extendi
 8. Optional: Push results (plots/tables) to the remote branch on your fork.
 9. Optional: Create a self-contained workflow archive for publication along with the paper (snakemake --archive).
 10. Optional: Delete the local clone/workdir to free space.
-
 
 ## Testing
 
