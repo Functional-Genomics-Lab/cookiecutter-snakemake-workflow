@@ -17,4 +17,5 @@ workflow/scripts/.snakemake*
 !.gitattributes
 !.gitlab-ci.yml
 !.test
+!.test/**
 !.test/data
