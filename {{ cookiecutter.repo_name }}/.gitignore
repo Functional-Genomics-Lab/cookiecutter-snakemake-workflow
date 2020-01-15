@@ -1,5 +1,5 @@
 *
-!config/config.yaml
+!config/config.yml
 !config/samples.tsv
 !config/units.tsv
 !LICENSE
