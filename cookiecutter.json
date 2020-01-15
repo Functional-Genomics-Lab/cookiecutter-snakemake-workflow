@@ -4,5 +4,5 @@
   "username": "emiller88",
   "project_name": "RNA-Seq",
   "repo_name": "rna-seq",
-  "min_snakemake_version": "3.12.0"
+  "min_snakemake_version": "5.2.1"
 }
