@@ -1,0 +1,12 @@
+name: {{ cookiecutter.repo_name }}
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - snakemake-minimal
+  - pandas
+  - jinja2
+  - pygments
+  - git-lfs
+  - networkx
+  - pygraphviz

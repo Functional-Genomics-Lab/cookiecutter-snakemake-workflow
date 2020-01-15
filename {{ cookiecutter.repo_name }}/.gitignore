@@ -2,6 +2,7 @@
 !config/config.yml
 !config/samples.tsv
 !config/units.tsv
+!environment.yml
 !LICENSE
 !README.md
 data
