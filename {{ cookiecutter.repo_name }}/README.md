@@ -27,6 +27,11 @@ Configure the workflow according to your needs via editing the file `config.yaml
 
 #### Step 3: Execute workflow
 
+With conda installed move to the workflow directory and execute the following.
+
+    conda env create -f environment.yml
+    conda activate {{cookiecutter.repo_name}}
+
 Test your configuration by performing a dry-run via
 
     snakemake --use-conda -n
