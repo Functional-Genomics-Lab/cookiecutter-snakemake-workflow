@@ -14,6 +14,9 @@ results/*
 !workflow/*
 !workflow/**
 workflow/scripts/.snakemake*
+!Makefile
+!pyproject.toml
+!poetry.lock
 !.gitignore
 !.editorconfig
 !.gitattributes

@@ -4,5 +4,6 @@
   "username": "emiller88",
   "project_name": "RNA-Seq",
   "repo_name": "rna-seq",
+  "repo_url": "https://functional-genomics.gitlab.io/analysis/RNA-Seq",
   "min_snakemake_version": "5.2.1"
 }

@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "{{cookiecutter.repo_name}}"
+version = "0.1.0"
+license = "MIT"
+readme = "README.md"
+description = "{{cookiecutter.project_name}} Anaylsis"
+authors = ["{{cookiecutter.full_name}} {{cookiecutter.email}}"]
+maintainers = ["{{cookiecutter.full_name}} {{cookiecutter.email}}"]
+homepage = "{{cookiecutter.repo_url}}"
+repository = "{{cookiecutter.repo_url}}"
+documentation = "{{cookiecutter.repo_url}}"
+keywords = ["snakemake", "workflow", "genomics", "analysis"]
+
+[tool.poetry.dependencies]
+python = "3.7.6"
+jinja2 = "^2.11.1"
+pygments = "^2.5.2"
+networkx = "^2.4"
+git-lfs = "^1.5"
+snakemake = "^{{cookiecutter.min_snakemake_version}}"
+pandas = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.0.1"
+black = "^19.10b0"
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
