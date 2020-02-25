@@ -9,7 +9,11 @@ snakemake:
 	poetry run snakemake $(FLAGS) -R $(rule)
 
 cluster:
+ifeq (, $(shell which singularity))
+	$(error "No singularity in $PATH, please run: module add singularity/2.4.5")
+else
 	poetry run snakemake --profile $(PROFILE) $(FLAGS) -R $(rule)
+endif
 
 report:
 	poetry run snakemake --report $(REPORT) $(FLAGS)
