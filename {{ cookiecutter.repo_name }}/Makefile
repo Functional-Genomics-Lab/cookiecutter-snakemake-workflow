@@ -15,7 +15,7 @@ report:
 	poetry run snakemake --report $(REPORT) $(FLAGS)
 
 dry:
-	poetry run snakemake -n $(FLAGS) $(REPORT) -R $(rule)
+	poetry run snakemake -n $(FLAGS) --report $(REPORT) -R $(rule)
 
 profile:
 	@mkdir -p ~/.config/snakemake
