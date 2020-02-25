@@ -34,7 +34,9 @@ install-pre-commit:
 poetry:
 ifeq (true,true)
 	curl -sSL "https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py" | python
+	@source $HOME/.poetry/env
 else
+	@echo "This is experimental and may not work yet"
 	(Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python
 endif
 
