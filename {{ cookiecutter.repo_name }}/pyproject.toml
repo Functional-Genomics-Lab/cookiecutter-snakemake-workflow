@@ -19,6 +19,7 @@ networkx = "^2.4"
 git-lfs = "^1.5"
 snakemake = "^{{cookiecutter.min_snakemake_version}}"
 pandas = "^1.0.0"
+pygraphviz = "^1.5"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.0.1"
