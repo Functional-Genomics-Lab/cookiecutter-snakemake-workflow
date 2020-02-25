@@ -12,7 +12,7 @@ documentation = "{{cookiecutter.repo_url}}"
 keywords = ["snakemake", "workflow", "genomics", "analysis"]
 
 [tool.poetry.dependencies]
-python = "3.7.6"
+python = "^3.6.4"
 jinja2 = "^2.11.1"
 pygments = "^2.5.2"
 networkx = "^2.4"
