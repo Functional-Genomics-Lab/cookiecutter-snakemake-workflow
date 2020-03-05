@@ -32,6 +32,7 @@ pre-commit: install-pre-commit
 install: install-pre-commit
 
 install-pre-commit: poetry-install
+	git init
 	poetry run pre-commit install
 
 poetry-install: poetry
