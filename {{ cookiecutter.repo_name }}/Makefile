@@ -29,11 +29,13 @@ profile:
 pre-commit: install-pre-commit
 	poetry run pre-commit run --all-files
 
-install: poetry install-pre-commit
-	poetry install
+install: install-pre-commit
 
-install-pre-commit:
+install-pre-commit: poetry-install
 	poetry run pre-commit install
+
+poetry-install: poetry
+	poetry install
 
 poetry:
 ifeq (true,true)
