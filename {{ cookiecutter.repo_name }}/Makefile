@@ -29,7 +29,10 @@ profile:
 pre-commit: install-pre-commit
 	poetry run pre-commit run --all-files
 
-install: install-pre-commit
+install: poetry poetry-install install-pre-commit
+
+poetry-install:
+	poetry install
 
 install-pre-commit: poetry-install
 	git init
